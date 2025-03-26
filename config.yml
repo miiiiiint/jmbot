@@ -1,0 +1,23 @@
+dir_rule:
+  base_dir: jm_data
+plugins:
+  after_photo:
+    - plugin: img2pdf
+      kwargs:
+        pdf_dir: jm_data
+        filename_rule: Pid
+  
+  after_album:
+    - plugin: img2pdf
+      kwargs:
+        pdf_dir: jm_data
+        filename_rule: Aid
+
+download:
+  cache: true 
+  image:
+    decode: true 
+    suffix: .jpg 
+  threading:
+
+    batch_count: 45
