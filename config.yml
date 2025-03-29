@@ -1,23 +1,9 @@
 dir_rule:
   base_dir: jm_data
-plugins:
-  after_photo:
-    - plugin: img2pdf
-      kwargs:
-        pdf_dir: jm_data
-        filename_rule: Pid
+  rule : Bd_Aid_Pindex
   
-  after_album:
-    - plugin: img2pdf
-      kwargs:
-        pdf_dir: jm_data
-        filename_rule: Aid
-
 download:
-  cache: true 
+  cache: true # 如果要下载的文件在磁盘上已存在，不用再下一遍了吧？默认为true
   image:
-    decode: true 
-    suffix: .jpg 
-  threading:
-
-    batch_count: 45
+    decode: true # JM的原图是混淆过的，要不要还原？默认为true
+    suffix: .jpg
