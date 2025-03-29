@@ -1,6 +1,6 @@
 ## 致谢
 
-感谢[jmcomic](https://github.com/JMasann/JMComic)提供的漫画下载服务
+感谢[jmcomic](https://github.com/hect0x7/JMComic-Crawler-Python)提供的漫画下载服务
 
 ## 部署
 
